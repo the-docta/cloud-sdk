@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/cloud-sdk/img/favicon.ico">
 
 
-<link rel="stylesheet" href="/cloud-sdk/styles.d652eadd.css">
+<link rel="stylesheet" href="/cloud-sdk/styles.b48a0ccc.css">
 
 
-<link rel="preload" href="/cloud-sdk/styles.8c58ea08.js" as="script">
+<link rel="preload" href="/cloud-sdk/styles.f1f87bc6.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/runtime~main.f8268d73.js" as="script">
+<link rel="preload" href="/cloud-sdk/runtime~main.37993ea8.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/main.cce89fdc.js" as="script">
+<link rel="preload" href="/cloud-sdk/main.37240e36.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/1.583c842f.js" as="script">
+<link rel="preload" href="/cloud-sdk/1.ba39a7d6.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/2.031c7483.js" as="script">
+<link rel="preload" href="/cloud-sdk/2.6fc53307.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/3.f9f705cd.js" as="script">
+<link rel="preload" href="/cloud-sdk/3.67cb3638.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/1be78505.0feb5679.js" as="script">
+<link rel="preload" href="/cloud-sdk/1be78505.47b133d1.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/06bd7c86.d43012f7.js" as="script">
+<link rel="preload" href="/cloud-sdk/06bd7c86.ed795abd.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/17896441.46d80cc8.js" as="script">
+<link rel="preload" href="/cloud-sdk/17896441.fb4ede29.js" as="script">
 
-<link rel="preload" href="/cloud-sdk/c582042f.0e06400e.js" as="script">
+<link rel="preload" href="/cloud-sdk/c582042f.a620333b.js" as="script">
 
 </head>
 <body>
@@ -51,25 +51,25 @@ on GitHub.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnch
 Make a change in your file and instantaneously see your updates!</p><p>Open your favorite Terminal and run these commands.</p><p>First Tab:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">$ node app</span></div></div></div></div></div><p>Second Tab:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">$ gulp watch</span></div></div></div></div></div><p>(optional) Third:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">$ karma test</span></div></div></div></div></div><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="building-for-source"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#building-for-source" title="Direct link to heading">#</a>Building for source</h4><p>For production release:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">$ gulp build --prod</span></div></div></div></div></div><p>Generating pre-built zip archives for distribution:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">$ gulp build dist --prod</span></div></div></div></div></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="docker"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#docker" title="Direct link to heading">#</a>Docker</h3><p>Dillinger is very easy to install and deploy in a Docker container.</p><p>By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">cd dillinger</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">docker build -t joemccann/dillinger:${package.json.version} .</span></div></div></div></div></div><p>This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out <code>${package.json.version}</code> with the actual version of Dillinger.</p><p>Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">docker run -d -p 8000:8080 --restart=&quot;always&quot; &lt;youruser&gt;/dillinger:${package.json.version}</span></div></div></div></div></div><p>Verify the deployment by navigating to your server address in your preferred browser.</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-sh codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">127.0.0.1:8000</span></div></div></div></div></div><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="kubernetes--google-cloud"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#kubernetes--google-cloud" title="Direct link to heading">#</a>Kubernetes + Google Cloud</h4><p>See <a href="https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md">KUBERNETES.md</a></p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="todos"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#todos" title="Direct link to heading">#</a>Todos</h3><ul><li>Write MORE Tests</li><li>Add Night Mode</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="license"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#license" title="Direct link to heading">#</a>License</h2><p>MIT</p><p><strong>Free Software, Hell Yeah!</strong></p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"></div><div class="col text--right"><em><small>Last updated on <time datetime="2020-04-16T13:57:29.000Z" class="docLastUpdatedAt_1sqk">4/16/2020</time> by <strong>Artem Kovalov</strong></small></em></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#tech" class="contents__link">Tech</a></li><li><a href="#installation" class="contents__link">Installation</a></li><li><a href="#plugins" class="contents__link">Plugins</a></li><li><a href="#development" class="contents__link">Development</a></li><li><a href="#docker" class="contents__link">Docker</a></li><li><a href="#todos" class="contents__link">Todos</a></li><li><a href="#license" class="contents__link">License</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/cloud-sdk/docs/overview/about">SAP Cloud SDK overview</a></li><li class="footer__item"><a class="footer__link-item" href="/cloud-sdk/docs/java/getting-started">Cloud SDK for Java</a></li><li class="footer__item"><a class="footer__link-item" href="/cloud-sdk/docs/js/getting-started">Cloud SDK for JS</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="/cloud-sdk/docs/support/docs/devops/getting-started">Cloud SDK for CI/CD</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://developers.sap.com/tutorial-navigator.html?tag=products:technology-platform/sap-cloud-sdk/sap-cloud-sdk">Cloud SDK Tutorials</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/sap-cloud-sdk">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://developers.sap.com/topics/cloud-sdk.html">SAP Developers Portal</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://community.sap.com/topics/cloud-sdk">Cloud SDK Community Page</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://help.sap.com/viewer/product/SAP_CLOUD_SDK/1.0/en-US?task=discover_task">Cloud SDK on SAP Help</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://https://blogs.sap.com/">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/SAP/cloud-sdk">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 SAP Cloud SDK</div></div></div></footer>
 </div>
 
-<script src="/cloud-sdk/styles.8c58ea08.js"></script>
+<script src="/cloud-sdk/styles.f1f87bc6.js"></script>
 
-<script src="/cloud-sdk/runtime~main.f8268d73.js"></script>
+<script src="/cloud-sdk/runtime~main.37993ea8.js"></script>
 
-<script src="/cloud-sdk/main.cce89fdc.js"></script>
+<script src="/cloud-sdk/main.37240e36.js"></script>
 
-<script src="/cloud-sdk/1.583c842f.js"></script>
+<script src="/cloud-sdk/1.ba39a7d6.js"></script>
 
-<script src="/cloud-sdk/2.031c7483.js"></script>
+<script src="/cloud-sdk/2.6fc53307.js"></script>
 
-<script src="/cloud-sdk/3.f9f705cd.js"></script>
+<script src="/cloud-sdk/3.67cb3638.js"></script>
 
-<script src="/cloud-sdk/1be78505.0feb5679.js"></script>
+<script src="/cloud-sdk/1be78505.47b133d1.js"></script>
 
-<script src="/cloud-sdk/06bd7c86.d43012f7.js"></script>
+<script src="/cloud-sdk/06bd7c86.ed795abd.js"></script>
 
-<script src="/cloud-sdk/17896441.46d80cc8.js"></script>
+<script src="/cloud-sdk/17896441.fb4ede29.js"></script>
 
-<script src="/cloud-sdk/c582042f.0e06400e.js"></script>
+<script src="/cloud-sdk/c582042f.a620333b.js"></script>
 
 
 </body>
