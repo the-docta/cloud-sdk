@@ -1,7 +1,7 @@
 import * as http from 'http';
 import * as https from 'https';
 import { errorWithCause } from '@sap-cloud-sdk/util';
-import axios from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 import { buildHeadersForDestination } from '../header-builder/header-builder-for-destination';
 import {
   Destination,
@@ -81,6 +81,17 @@ export function execute(executeFn: ExecuteHttpRequestFn) {
     const request = merge(destinationRequestConfig, requestConfig);
     return executeFn(request);
   };
+}
+
+export async function buildAxiosRequestConfig<T extends HttpRequestConfig>(
+  destination: Destination | DestinationNameAndJwt, requestConfig: T
+): Promise<AxiosRequestConfig> {
+  const destinationRequestConfig = await buildHttpRequest(
+    destination,
+    requestConfig.headers
+  );
+  const request = merge(destinationRequestConfig, requestConfig);
+  return  { ...getAxiosConfigWithDefaults(), ...request }
 }
 
 /**
